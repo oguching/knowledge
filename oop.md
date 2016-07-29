@@ -9,4 +9,4 @@ Protected
 Public
  * can accessed outside of the class.
  
-A rule of thumb I remember reading is to set class variables as private and methods as public.
+A rule of thumb I remember reading is to set class variables as private and methods as public. Another approach to managing visibility is to mark all properties as _protected_, and only allow access to them using `getter` and `setter` methods.
