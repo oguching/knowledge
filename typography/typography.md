@@ -5,3 +5,5 @@ In metal type the space between lines is made from lead, thus the term `leading`
 Line Spacing
 
 Line spacing is defined as the space from one baseline to another.
+
+![alt text](https://github.com/oguching/knowledge/raw/master/images/leading_linespace.jpg "leading and line space")
