@@ -4,3 +4,4 @@
 * [Crystal](https://crystal-lang.org/)
 * [PureScript](http://www.purescript.org/)
 * [elm](http://elm-lang.org/)
+* [nim](http://nim-lang.org/)
