@@ -9,7 +9,28 @@ The following example changes the container from flash format .flv to .mp4
 
 `ffmpeg -i input.flv -c:v copy -c:a copy -copyts output.mp4`
 
-Sources:
-[FFmpeg](http://ffmpeg.org/ffmpeg.html)
-[CRF Guide](http://slhck.info/articles/crf)
-[FFmpeg common usage](http://fatbellyman.com/webstuff/ffmpeg_common_usage/index.htm)
+### Trim video
+
+`ffmpeg -i input.wmv -ss 30 -c copy -to 40 output.wmv`
+
+`-i` indicates the input file
+`-ss` is the start timestamp in seconds. This option allows you to skip to a certain point.
+`-t` is the encoding duration in seconds
+`-to` is the timestamp to which you want to cut
+
+Timestamp needs to be in HH:MM:SS.xxx format or in seconds
+
+### Common Errors
+
+`Output file is empty, nothing was encoded (check -ss / -t / -frames parameters if used)`
+
+This message is often seen when the `-ss` option value is greater than the duration of the input.
+For example, if `-ss 30` is used for a 15 second input you may see this message. 
+
+Make sure your `-ss`, `-t`, `-to`, and/or `-frames` value does not exceed the input duration.
+
+Sources:  
+[FFmpeg](http://ffmpeg.org/ffmpeg.html)   
+[CRF Guide](http://slhck.info/articles/crf)   
+[FFmpeg common usage](http://fatbellyman.com/webstuff/ffmpeg_common_usage/index.htm)  
+[FFmpeg Errors](https://trac.ffmpeg.org/wiki/Errors)   
