@@ -7,3 +7,4 @@
 * [nim](http://nim-lang.org/)
 * [Earl Grey](http://www.earl-grey.io/)
 * [Idris](http://www.idris-lang.org/)
+* [Ceylon](https://ceylon-lang.org/)
