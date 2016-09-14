@@ -46,3 +46,6 @@ What we can do is wrap the `span` tags in a `div` and it would be fine
 ```
 
 * JSX is basically XML so be sure to close your tags. `<br>` won't do. `<br />` is better.
+
+Sources:
+[Learn React in 7 Minutes](https://medium.com/learning-new-stuff/learn-react-js-in-7-min-92a1ef023003#.w2w6eo9uj)
