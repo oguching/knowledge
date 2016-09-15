@@ -14,7 +14,8 @@ React is a JavaScript library for building User Interfaces.
   ReactDOM.render( <HelloMessage />, document.getElementById('container'))
 ```
 
-Here we are creating a `HelloMessage` component using JSX.
+Here we are creating a `HelloMessage` component using JSX.  
+In the render method, you’ll return what you want React to draw on the page.  
 ReactDOM accepts two arguments: the UI object, in this case `<HellowMessage>` and the DOM object, in this case `document.getElementById('container')`
 
 ### Props and State
@@ -116,4 +117,5 @@ What we can do is wrap the `span` tags in a `div` and it would be fine
 * JSX is basically XML so be sure to close your tags. `<br>` won't do. `<br />` is better.
 
 Sources:  
-[Learn React in 7 Minutes](https://medium.com/learning-new-stuff/learn-react-js-in-7-min-92a1ef023003#.w2w6eo9uj)
+[Learn React in 7 Minutes](https://medium.com/learning-new-stuff/learn-react-js-in-7-min-92a1ef023003#.w2w6eo9uj)  
+[Building your first React App](https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.uu77ljaci)
