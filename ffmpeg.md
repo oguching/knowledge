@@ -34,4 +34,5 @@ Sources:
 [CRF Guide](http://slhck.info/articles/crf)   
 [FFmpeg common usage](http://fatbellyman.com/webstuff/ffmpeg_common_usage/index.htm)  
 [FFmpeg Errors](https://trac.ffmpeg.org/wiki/Errors)   
-[FFmpeg Cheatsheet](http://www.rodrigopolo.com/ffmpeg/cheats.php)
+[FFmpeg Cheatsheet](http://www.rodrigopolo.com/ffmpeg/cheats.php)  
+[Useful FFmpeg Commands](http://www.labnol.org/internet/useful-ffmpeg-commands/28490/)
