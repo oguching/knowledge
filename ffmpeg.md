@@ -20,6 +20,10 @@ The following example changes the container from flash format .flv to .mp4
 
 Timestamp needs to be in HH:MM:SS.xxx format or in seconds
 
+### List all installed encoders
+
+`ffmpeg -encoders`
+
 ### Common Errors
 
 `Output file is empty, nothing was encoded (check -ss / -t / -frames parameters if used)`
