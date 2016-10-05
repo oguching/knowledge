@@ -1,4 +1,4 @@
-# knowledge
+# knowledge :bulb:
 
 Knowledge is inspired by [yoshuawuyts/knowledge](https://github.com/yoshuawuyts/knowledge), document all the things.
 
