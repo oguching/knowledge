@@ -9,3 +9,4 @@
 * [Idris](http://www.idris-lang.org/)
 * [Ceylon](https://ceylon-lang.org/)
 * [Kotlin](http://kotlinlang.org/)
+* [Fantom](http://fantom.org/)
