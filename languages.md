@@ -10,3 +10,4 @@
 * [Ceylon](https://ceylon-lang.org/)
 * [Kotlin](http://kotlinlang.org/)
 * [Fantom](http://fantom.org/)
+* [Gosu](http://gosu-lang.github.io/)
