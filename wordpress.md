@@ -1,3 +1,8 @@
+Plugins  
+WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript.  
+Plugins are deteected automatically from the `wp-content/plugins` directory within your WordPress installation directory
+
+
 Just gonna put some wordpress links here.
 * [Creating Custom Post Types](https://www.elegantthemes.com/blog/tips-tricks/creating-custom-post-types-in-wordpress) 
 * [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)
