@@ -1,6 +1,39 @@
 Plugins  
 WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript.  
-Plugins are deteected automatically from the `wp-content/plugins` directory within your WordPress installation directory
+
+Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory.
+
+Hooks
+In programming,initialisation of data is important as it's where we setup the prerequisites for the application such as its attributes, its required files and data, its connection to the database, and so on. WordPress has a lot of `hooks` that you can attach a function to. 
+
+```php
+  add_action('wp_head', 'my_facebook_tags');
+  
+  function my_facebook_tags()
+  {
+    echo "I am in the head section";
+  }
+```
+
+In the code above, `wp-head` is a hook and it has the `my_facebook_tags()` function attached to it, so the function runs in the head section of all WordPress pages.
+
+The `init` hook
+* WordPress recommends the use of `init` hook for **registering new custom post types**.
+* **Plugin configurations and settings** need to be defined in each and every request and hence its a good practice to include them inside this hook.
+* We can intercept user submitted data (using $_GET and $_POST) without any actions, but it's recommended to use the `init` hooks as it guarantees the execution in each request.
+* We can define new rewrite rules using the `init` hook, but keep in mind that these rules will only take effect once we flush the rewrite rules.
+* Plugins contain many **custom actions** for extending the functionality. There will be scenarios where we need to add new custom actions as well as remove existing ones. In such occasions, it's essential to implement those activities within `init` hook.
+* WordPress offers multi-language support and thus we are allowed to load the file containing the translated string. This should also be placed inside the `init` hook.
+
+
+There are two types of hooks, `actions` and `filters`. 
+
+Actions  
+Actions run whenever WordPress detects the hook that calls them.
+
+* [WordPress Hooks](https://premium.wpmudev.org/blog/wordpress-hooks/)
+* [WordPress Plugin Development - Wpmudev](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/)
+* [WordPress Initialisation hooks benefits](https://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-common-mistakes--wp-34427)
 
 
 Just gonna put some wordpress links here.
