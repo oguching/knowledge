@@ -1,9 +1,38 @@
 Plugins  
 WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript.  
 
-Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory.
+Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactie status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.
 
-Hooks
+`wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.
+
+Adding JavaScript
+
+```php
+  add_actions('wp_enqueue_scripts', 'fwd_scripts');
+  function fwds_scripts()
+  {
+    wp_enqueue_script('jquery');
+    
+    wp_register_script('slidesjs_core', plugins_url('js/jquery.slides.min.js',__FILE__), array("jquery"));
+    
+    wp_enqueue_script('slidesjs_core');
+  }
+```
+
+jQuery comes installed with WordPress so we don't need to register it, we just add it. jQuery.slides does not come with WordPress so we have to register it before we can add it to our pages.
+
+Adding Styles
+
+```php
+ add_action('wp-enqueue_scripts', 'fwds_styles');
+ function fwds_styles()
+ {
+   wp_register_style('slidesjs_example', plugins_url('css/example.css', __FILE__));
+   wp_enqueue_style('slidesjs_example');
+ }
+```
+
+Hooks  
 In programming,initialisation of data is important as it's where we setup the prerequisites for the application such as its attributes, its required files and data, its connection to the database, and so on. WordPress has a lot of `hooks` that you can attach a function to. 
 
 ```php
@@ -41,6 +70,10 @@ Just gonna put some wordpress links here.
 * [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)
 * [WordPress Post Types](https://codex.wordpress.org/Post_Types) Custom Post Type API  
 * [WordPress Theme files and what they do](https://www.doitwithwp.com/rundown-wordpress-theme-files-what-they-do/)
+
+Shortcodes
+
+* [complete guide to shortcodes](https://www.smashingmagazine.com/2012/05/wordpress-shortcodes-complete-guide/)
 
 Taxonomy  
 Think of a Taxonomy as a type of categorizing feature that is completely custom. WordPress already includes Categories and Tag support by default but developers can create custom taxonomies to extend their themes or plugins even further.
