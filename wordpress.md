@@ -71,9 +71,15 @@ Just gonna put some wordpress links here.
 * [WordPress Post Types](https://codex.wordpress.org/Post_Types) Custom Post Type API  
 * [WordPress Theme files and what they do](https://www.doitwithwp.com/rundown-wordpress-theme-files-what-they-do/)
 
-Shortcodes
+Shortcodes  
+Shortcodes inject content into a WordPress site/page using square `([])` brackets. We instruct WordPress to find the macro that is in square brackets and replace it with the appropriate dynamic content, which is produced by a PHP function.
 
-* [complete guide to shortcodes](https://www.smashingmagazine.com/2012/05/wordpress-shortcodes-complete-guide/)
+The creation process involves the following steps:
+1. Create the function, which will be called by WordPress when it finds a shortcode.
+2. Register the shortcode by setting a unique name.
+3. Tie the registration function to a WordPress action.
+
+* [Complete guide to shortcodes](https://www.smashingmagazine.com/2012/05/wordpress-shortcodes-complete-guide/)
 
 Taxonomy  
 Think of a Taxonomy as a type of categorizing feature that is completely custom. WordPress already includes Categories and Tag support by default but developers can create custom taxonomies to extend their themes or plugins even further.
