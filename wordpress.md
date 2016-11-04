@@ -85,6 +85,9 @@ Taxonomy
 Think of a Taxonomy as a type of categorizing feature that is completely custom. WordPress already includes Categories and Tag support by default but developers can create custom taxonomies to extend their themes or plugins even further.
 * [Taxonomy - WordPress](https://codex.wordpress.org/Taxonomies)  
 
+Ajax  
+In WordPress, all Ajax requests are sent to `admin-ajax.php` for processing.
+
 Child Themes       
 Child themes are the recommended way to customise an existing theme. It inherits the functionality and styling of it's parent theme. The only file required for the Child theme is `style.css`. However it must be specially formatted with the `Template` value matching the parent filename in `wp-content/themes`.
 
