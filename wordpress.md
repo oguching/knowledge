@@ -105,4 +105,7 @@ WordPress looks to the child theme folder first before the parent theme. You can
 * [Child Theme - WordPress](https://codex.wordpress.org/Child_Themes)  
 * [Creating a Child Theme for Customizr](http://docs.presscustomizr.com/article/24-creating-a-child-theme-for-customizr)  
 * [How to create modify and utilise child themes](https://www.doitwithwp.com/what-why-how-child-themes-wordpress/)
-* [How to modify the parent theme behaviour within the child theme](https://code.tutsplus.com/articles/how-to-modify-the-parent-theme-behavior-within-the-child-theme--wp-31006)
+* [How to modify the parent theme behaviour within the child theme](https://code.tutsplus.com/articles/how-to-modify-the-parent-theme-behavior-within-the-child-theme--wp-31006)  
+
+Who to follow
+* [Carl Alexander](https://carlalexander.ca)
