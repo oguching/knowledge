@@ -3,7 +3,21 @@ WordPress plugins are programs that add functionality to a WordPress site using 
 
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactie status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.
 
-`wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.
+`wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.   
+`wp_enqueue_script()` functions requires at least two parameters: the _name_ of the script and the _URL_ to it.  
+For example: `wp_enqueue_script('test', plugin_dir_url(__FILE__) . 'test.js');`
+
+Three additional parameters lets you have more control on the way your script will be included, especially the last parameter which is a boolean: by default, this boolean is set to `false` and your script will be included in the `head` tag, but if you set it to `true`, then your script will be included in the footer.
+
+The fourth parameter is useful if you make various versions of your script: it is a string containing the version number which will be concatented to the end of the URL. Adding a version number ensures that visitors will get the right version of your script regardless of caching.
+
+The third parameter let's you indicate dependencies for your script For example, if your script needs jQuery, you can use this parameter.
+
+```php 
+  wp_enqueue_script('test', plugin_dir_url(__FILE__) . 'test.js', array('jquery')); 
+```
+
+Dependencies must be indicated into an array, even if there is only one dependency. The name that you indicate into this array is the name of a script registered thanks to a second function: `wp_register_script()`
 
 Adding JavaScript
 
