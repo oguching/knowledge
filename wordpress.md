@@ -1,5 +1,5 @@
 Plugins  
-WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript.  
+WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript. There are a number of folder structures, just pick one and stick with it or create one that makes sense for the plugin you are writing.     
 
 Suggested Folder Structure  
 * wp-plugin-name
@@ -11,6 +11,20 @@ Suggested Folder Structure
     * custom-post-type-inner-metabox.php – every custom post type that your plugin defines will need a inner-metabox template this keeps your presentation logic out of your business logic.
     * settings.php – this is the plugin settings page template.
   
+Another Suggested Folder Structure
+* wp-plugin-name/ - main plugin folder
+  *assets/ - folder to store custom assets
+    * css/
+    * img/
+    * js/
+  * includes/ - folder to store plugins php files
+    * admin.php
+    * core.php
+  * lang/ - folder to store plugin translations
+  * msp-helloworld.php - main plugin file
+  * readme.txt  - formatted plugin information
+
+
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
 
 * [How to write a WordPress Plugin](http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/)
