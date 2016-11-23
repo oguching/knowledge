@@ -135,3 +135,4 @@ WordPress looks to the child theme folder first before the parent theme. You can
 
 Who to follow
 * [Carl Alexander](https://carlalexander.ca)
+* [Hugh Lashbrooke](https://hughlashbrooke.com/)
