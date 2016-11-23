@@ -3,8 +3,13 @@ WordPress plugins are programs that add functionality to a WordPress site using 
 
 Suggested Folder Structure  
 * wp-plugin-name
-  * wp-plugin-name.php - main plugin class
+  * wp-plugin-name.php - main plugin class.
   * readme.txt – optional, describes the plugin for use in the wordpress.org plugin directory.
+  * post-types/ – define each post type separately in this directory.
+    * custom-post-type.php – each post type is defined separately.
+  * templates/ – all of your admin side templates.
+    * custom-post-type-inner-metabox.php – every custom post type that your plugin defines will need a inner-metabox template this keeps your presentation logic out of your business logic.
+    * settings.php – this is the plugin settings page template.
   
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
 
