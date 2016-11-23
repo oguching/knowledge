@@ -17,12 +17,12 @@ Another Suggested Folder Structure
     * css/
     * img/
     * js/
-  * includes/ - folder to store plugins php files
+  *includes/ - folder to store plugins php files
     * admin.php
     * core.php
-  * lang/ - folder to store plugin translations
-  * msp-helloworld.php - main plugin file
-  * readme.txt  - formatted plugin information
+  *lang/ - folder to store plugin translations
+  *msp-helloworld.php - main plugin file
+  *readme.txt  - formatted plugin information
 
 
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
