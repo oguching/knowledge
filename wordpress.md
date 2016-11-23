@@ -1,7 +1,14 @@
 Plugins  
 WordPress plugins are programs that add functionality to a WordPress site using WordPress API. Plugins can be written in PHP and JavaScript.  
 
-Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactie status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.
+Suggested Folder Structure  
+* wp-plugin-name
+  * wp-plugin-name.php - main plugin class
+  * readme.txt – optional, describes the plugin for use in the wordpress.org plugin directory.
+  
+Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
+
+* [How to write a WordPress Plugin](http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/)
 
 `wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.   
 `wp_enqueue_script()` functions requires at least two parameters: the _name_ of the script and the _URL_ to it.  
