@@ -72,7 +72,7 @@ Adding Styles
 ```
 
 Hooks  
-In programming,initialisation of data is important as it's where we setup the prerequisites for the application such as its attributes, its required files and data, its connection to the database, and so on. WordPress has a lot of `hooks` that you can attach a function to. 
+In programming, initialisation of data is important as it's where we setup the prerequisites for the application such as its attributes, its required files and data, its connection to the database, and so on. WordPress has a lot of `hooks` that you can attach a function to. 
 
 ```php
   add_action('wp_head', 'my_facebook_tags');
@@ -83,7 +83,7 @@ In programming,initialisation of data is important as it's where we setup the pr
   }
 ```
 
-In the code above, `wp-head` is a hook and it has the `my_facebook_tags()` function attached to it, so the function runs in the head section of all WordPress pages.
+Whenever WordPress gets to the `wp_header()` function it finds all other functions, which are hooked to it using `add_action()`. It then executes these functions one-by-one. In the code above, `wp-head` is a hook and it has the `my_facebook_tags()` function attached to it, so the function runs in the head section of all WordPress pages.
 
 The `init` hook
 * WordPress recommends the use of `init` hook for **registering new custom post types**.
