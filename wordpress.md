@@ -96,12 +96,15 @@ The `init` hook
 
 There are two types of hooks, `actions` and `filters`. 
 
-Actions  
-Actions run whenever WordPress detects the hook that calls them.
+**Actions**  
+Actions allow you to add functionality, you basically define a function that is run whenever the hook is processed by WordPress.
 
 * [WordPress Hooks](https://premium.wpmudev.org/blog/wordpress-hooks/)
 * [WordPress Plugin Development - Wpmudev](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/)
-* [WordPress Initialisation hooks benefits](https://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-common-mistakes--wp-34427)
+* [WordPress Initialisation hooks benefits](https://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-common-mistakes--wp-34427)  
+
+**Filters**
+Filters work similarly to `Action` however instead of adding functionality, they modify existing functionality. For example, WordPress has a hook which determines the length of the excerpt: 55 words. You can use a filter to modify it to different word count.
 
 
 Just gonna put some wordpress links here.
