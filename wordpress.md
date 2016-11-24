@@ -26,11 +26,19 @@ Another Suggested Folder Structure
 
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
 
+In code, there are a few ways for your plugins to be activated:
+* via a function
+* via an action hook
+* via a filter hook
+* via a shortcode
+* via a widget
+
 Plugin Links:  
 * [Beginners Guide to Building Plugins](https://premium.wpmudev.org/blog/wordpress-development-beginners-building-plugins/) wpmudev  
-* [WordPress Plugin Development](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/) Wpmudev  
+* [WordPress Plugin Development](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/) wpmudev  
 * [How to write a WordPress Plugin](http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/)
 * [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)  
+* [Create WordPress Plugin](https://premium.wpmudev.org/blog/create-wordpress-plugin/) wpmudev
 
 `wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.   
 `wp_enqueue_script()` functions requires at least two parameters: the _name_ of the script and the _URL_ to it.  
