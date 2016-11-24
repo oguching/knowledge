@@ -38,7 +38,8 @@ Plugin Links:
 * [WordPress Plugin Development](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/) wpmudev  
 * [How to write a WordPress Plugin](http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/)
 * [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)  
-* [Create WordPress Plugin](https://premium.wpmudev.org/blog/create-wordpress-plugin/) wpmudev
+* [Create WordPress Plugin](https://premium.wpmudev.org/blog/create-wordpress-plugin/) wpmudev  
+* [Intermediate building plugins](https://premium.wpmudev.org/blog/wordpress-development-intermediate-building-plugins/) wpmudev
 
 `wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.   
 `wp_enqueue_script()` functions requires at least two parameters: the _name_ of the script and the _URL_ to it.  
@@ -126,7 +127,7 @@ Just gonna put some wordpress links here.
 Shortcodes  
 Shortcodes inject content into a WordPress site/page using square `([])` brackets. We instruct WordPress to find the macro that is in square brackets and replace it with the appropriate dynamic content, which is produced by a PHP function.
 
-The creation process involves the following steps:
+The creation process involves the following steps:  
 1. Create the function, which will be called by WordPress when it finds a shortcode.
 2. Register the shortcode by setting a unique name.
 3. Tie the registration function to a WordPress action.
