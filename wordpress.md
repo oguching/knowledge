@@ -26,7 +26,11 @@ Another Suggested Folder Structure
 
 Plugins are detected automatically from the `wp-content/plugins` directory within your WordPress installation directory. Plugins will be on inactive status by default. We can click on the `activate` link to activate the plugin. Once the plugin is successfully activated, its features will get effected to your website.   
 
+Plugin Links:  
+* [Beginners Guide to Building Plugins](https://premium.wpmudev.org/blog/wordpress-development-beginners-building-plugins/) wpmudev  
+* [WordPress Plugin Development](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/) Wpmudev  
 * [How to write a WordPress Plugin](http://www.yaconiello.com/blog/how-to-write-wordpress-plugin/)
+* [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)  
 
 `wp_enqueue_script` is used to include scripts into an HTML document. It is the recommended practice. Some developers inline styles using `echo` this practice is not recommended. We also add styles with `wp_enqueue_script`.   
 `wp_enqueue_script()` functions requires at least two parameters: the _name_ of the script and the _URL_ to it.  
@@ -100,7 +104,6 @@ There are two types of hooks, `actions` and `filters`.
 Actions allow you to add functionality, you basically define a function that is run whenever the hook is processed by WordPress.
 
 * [WordPress Hooks](https://premium.wpmudev.org/blog/wordpress-hooks/)
-* [WordPress Plugin Development - Wpmudev](https://premium.wpmudev.org/blog/wordpress-plugin-development-guide/)
 * [WordPress Initialisation hooks benefits](https://code.tutsplus.com/articles/wordpress-initialization-hooks-benefits-and-common-mistakes--wp-34427)  
 
 **Filters**
@@ -109,7 +112,6 @@ Filters work similarly to `Action` however instead of adding functionality, they
 
 Just gonna put some wordpress links here.
 * [Creating Custom Post Types](https://www.elegantthemes.com/blog/tips-tricks/creating-custom-post-types-in-wordpress) 
-* [How to create a WordPress Plugin](https://www.elegantthemes.com/blog/tips-tricks/how-to-create-a-wordpress-plugin)
 * [WordPress Post Types](https://codex.wordpress.org/Post_Types) Custom Post Type API  
 * [WordPress Theme files and what they do](https://www.doitwithwp.com/rundown-wordpress-theme-files-what-they-do/)
 
