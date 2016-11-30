@@ -139,7 +139,44 @@ Think of a Taxonomy as a type of categorizing feature that is completely custom.
 * [Taxonomy - WordPress](https://codex.wordpress.org/Taxonomies)  
 
 Ajax  
-In WordPress, all Ajax requests are sent to `admin-ajax.php` for processing.
+In WordPress, all Ajax requests are sent to `admin-ajax.php` for processing.  
+
+Nonce  
+A nonce is a **n**umber used **once**, and it is used for intention verification purposes in WordPress. It is a unique code that is only used (more or less) once to identify a particular transaction. Think of it as a password that changes each time it is used. Nonces can be locked down in many ways. They are unique to the WordPress install, to the WordPress user, to the action, to the object of the action, and to the time of the action (24 hour window). That means that if any of these things changes, the nonce is invalid.
+
+Add Nonces to your Plugins  
+To protect your `<form>` with a nonce, simply use the `wp_nonce_field()` function within the `<form>`. For backwards compatibility, use `function_exists()` to execute the code conditionally. The string you pass to the function should be unique to your plugin. Use the following convention: `plugin-name-action_object` So, if my plugin is called “cool plugin” and the action the form does is “update options” and the object is “advanced options,” I’d do `cool-plugin-update-options_advanced`. The “object” part isn’t required, but if you have multiple forms, protect each one with a different object for the highest level of protection.  
+
+```php
+  <form...>
+  <?php
+    if ( function_exists('wp_nonce_field') )
+    {
+      wp_nonce_field('plugin-name-action_' . $your_object);
+    }
+  ?>
+```
+
+Link Nonce Protection  
+If you’re performing actions based on the clicking of links, you can add a nonce to your links using `wp_nonce_url()` which takes two parameters. The first is the URL of the link, the second is your nonce key. 
+
+```php
+  <?php
+    $link = 'your-url.php';
+    $link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'plugin-name-action_' . $your_object) : $link;
+  ?>
+
+  <a href="<?php echo $link; ?>">link</a>
+```
+
+Nonce Verification  
+On the backend, before performing the action protected by the nonce, simply call this:  
+
+```php
+  <?php check_admin_referer('plugin-name-action_' . $your_object); ?>
+```
+
+* [Nonce](https://markjaquith.wordpress.com/2006/06/02/wordpress-203-nonces/)  
 
 Child Themes       
 Child themes are the recommended way to customise an existing theme. It inherits the functionality and styling of it's parent theme. The only file required for the Child theme is `style.css`. However it must be specially formatted with the `Template` value matching the parent filename in `wp-content/themes`.
@@ -163,3 +200,4 @@ WordPress looks to the child theme folder first before the parent theme. You can
 Who to follow
 * [Carl Alexander](https://carlalexander.ca)
 * [Hugh Lashbrooke](https://hughlashbrooke.com/)
+* [Mark Jaquith](https://markjaquith.wordpress.com)
