@@ -118,4 +118,7 @@ What we can do is wrap the `span` tags in a `div` and it would be fine
 
 Sources:  
 [Learn React in 7 Minutes](https://medium.com/learning-new-stuff/learn-react-js-in-7-min-92a1ef023003#.w2w6eo9uj)  
-[Building your first React App](https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.uu77ljaci)
+[Building your first React App](https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.uu77ljaci)  
+
+Who to Follow:
+* [Max Stoiber](http://mxstbr.com/)
