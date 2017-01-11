@@ -7,3 +7,6 @@ Custom attributes
 
 `script[src]` expands to  
 `<script src=""></script>`
+
+ `div#footer.class1.class2.class3` expands to
+ `<div id="footer" class="class1 class2 class3">`
