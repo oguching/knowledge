@@ -6,3 +6,13 @@ In JavaScript, the absence of a value is written as `undefined`, and it means th
   undefined === undefined
   //=> true
 ```
+Any function that has no expression after the `return` keyword returns `undefined`.
+
+```JavaScript
+  var isUndefined = function() {
+    return
+  }
+  
+  undefined === isUndefined()
+  //=> true
+```
