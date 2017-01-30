@@ -11,7 +11,7 @@ jQuery Ajax Syntax
 `$.ajax('url', {settings})` where
 
 **url** is a String and contains the url of where the request is sent.
-**settings** is a PlainObject type, can be considered a set of key/value pairs that configure the Ajax request.
+**settings** is a PlainObject type, can be considered a set of key/value pairs that configure the Ajax request. Settings are optional.
 
 ```JavaScript
   $.ajax('file.html',
