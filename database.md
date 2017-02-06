@@ -16,7 +16,9 @@ If there is no match, NULL values are returned for those columns.
 The left table is the one encountered first in the SQL statement.
 
 [Marco Arment](https://marco.org) really does not like joins and advocates you avoid it. In his Blogpost he quotes CodingHorror's tweet saying Joins are expensive. He claims Tumblr and Instapaper never used joins.
-> Don't underestimate the benefits of some denormalisation and avoiding joins.  
+> Don't underestimate the benefits of some denormalisation and avoiding joins.   
+
+
 He uses a two-query substitution
 
 ```php
