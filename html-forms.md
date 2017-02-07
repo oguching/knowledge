@@ -17,3 +17,6 @@ input types
 examples
 
 `<input type="search" name="search" />`
+
+resources:
+* [HTML5 Form Input Types](http://html5doctor.com/html5-forms-input-types/)
