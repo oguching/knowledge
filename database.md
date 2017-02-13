@@ -30,6 +30,10 @@ He uses a two-query substitution
   );
 ```
 
+MySQL GUI  
+* [Adminer](https://www.adminer.org/) Formerly PhpMiniAdmin  
+* [DBeaver](http://dbeaver.jkiss.org/) 
+* [HeidiSQL](http://www.heidisql.com/)  
 
 resources  
 * [getting joins](http://www.khankennels.com/blog/index.php/archives/2007/04/20/getting-joins/)
