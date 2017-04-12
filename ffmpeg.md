@@ -20,6 +20,25 @@ The following example changes the container from flash format .flv to .mp4
 
 Timestamp needs to be in HH:MM:SS.xxx format or in seconds
 
+### MP3 Encoding
+
+`ffmpeg -i input.wav -codec:a libmp3lame -qscale:a 2 output.mp3`
+
+`qscale:a` (alias -q:a)
+
+Values are encoder specific, so for libmp3lame the range is 0 - 9 where a lower value translates to a higher quality.
+
+LAME Bitrate Overview
+
+| Bitrate range (kbit/s) | ffmpeg option |
+|=======================:|==============:|
+| 320 CBR (Non VBR Example | -b:a 32k (this is 32KB/s, or its max) |
+
+
+Native ffmpeg aac encoder
+
+`ffmpeg -i input.wav -c:a aac -b:a 160k output.m4a`
+
 ### List all installed encoders
 
 `ffmpeg -encoders`
