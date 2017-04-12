@@ -32,7 +32,8 @@ LAME Bitrate Overview
 
 | Bitrate range (kbit/s) | ffmpeg option |
 |------------------------|:-------------:|
-| 320 CBR (Non VBR Example | -b:a 32k (this is 32KB/s, or its max) |
+| 320 CBR (Non VBR Example | -b:a 320k (this is 32KB/s, or its max) |
+| 220 - 260 | -q:a 0 (this is VBR from 22 to 26KB/s) |
 
 
 Native ffmpeg aac encoder
