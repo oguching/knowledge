@@ -31,7 +31,7 @@ Values are encoder specific, so for libmp3lame the range is 0 - 9 where a lower 
 LAME Bitrate Overview
 
 | Bitrate range (kbit/s) | ffmpeg option |
-|=======================:|==============:|
+|------------------------|:-------------:|
 | 320 CBR (Non VBR Example | -b:a 32k (this is 32KB/s, or its max) |
 
 
