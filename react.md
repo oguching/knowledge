@@ -1,5 +1,16 @@
 React is a JavaScript library for building User Interfaces.
 
+### Template for creating a piece of UI using React
+```JSX
+  var TweetBox = React.createClass({
+    render: function () {
+      return (
+        // HTML here
+      )
+    }
+  })
+```
+
 ### component based
 
 ```JSX
