@@ -27,9 +27,10 @@ React is a JavaScript library for building User Interfaces.
 
 Here we are creating a `HelloMessage` component using JSX.  
 In the render method, you’ll return what you want React to draw on the page.  
-ReactDOM accepts two arguments: the UI object, in this case `<HellowMessage>` and the DOM object, in this case `document.getElementById('container')`
+ReactDOM accepts two arguments: the UI object, in this case `<HelloMessage>` and the DOM object, in this case `document.getElementById('container')`
 
 ### Props and State
+React does not directly modify the DOM instead you write event handlers which modify state and then you render whatever the current state is.
 Props are passed down from components higher up in the hierarchy.
 
 ```JSX
