@@ -8,7 +8,7 @@ The size of this box is determined by the element's:
  * padding
  * border
  
- [[images/box-model.png]]
+![alt text](https://github.com/oguching/knowledge/blob/master/images/box-model.png "CSS Box Model")
 
 css methodologies
 * BEM
