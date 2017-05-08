@@ -31,7 +31,7 @@ ReactDOM accepts two arguments: the UI object, in this case `<HelloMessage>` and
 
 ### Props and State
 React does not directly modify the DOM instead you write event handlers which modify state and then you render whatever the current state is.
-Props are passed down from components higher up in the hierarchy.
+Props are a way of passing data from parent to child.
 
 ```JSX
 var BUTTONTEXT = 'you want to err click ze button?'
@@ -64,6 +64,8 @@ ReactDOM.render(<App text={BUTTONTEXT} />, document.getElementById('container'))
 Another way of storing data in React is in the component's state. Unlike props-which are immutable from the compoents perspective - 
 the state is mutable. So if you want the data in your app to change - for example based on user interractions - it must be stored
 in a component's state somewhere in the app.
+
+State is reserved only for interactivity. That is, data that changes over time.  
 
 State must be initialized. We use `getInitialState()` for this. To initialize we simply pass a `getInitialState()` to the 
 component, and return whatever state you want your component to be initialized with. To modify state, simply call `this.setState()`
