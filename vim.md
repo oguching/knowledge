@@ -8,3 +8,7 @@ exit vim
 :qa to quit all (short for :quitall)
 
 ([source](https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor#11828573))
+
+undo last change
+
+:u to undo last change
