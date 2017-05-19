@@ -7,6 +7,7 @@ is the main language for writing Android applications.
 
 [Kotlin](http://kotlinlang.org/)  
 [Learn Kotlin in Y minutes](https://learnxinyminutes.com/docs/kotlin/)  
+[Kotlin.link](https://kotlin.link/)
 
 * [Elixir](http://elixir-lang.org/)
 * [Crystal](https://crystal-lang.org/)
