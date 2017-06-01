@@ -9,6 +9,13 @@ is the main language for writing Android applications.
 [Learn Kotlin in Y minutes](https://learnxinyminutes.com/docs/kotlin/)  
 [Kotlin.link](https://kotlin.link/)
 
+***
+
+### Scala
+
+[Scala](http://www.scala-lang.org/)  
+[Scala books](http://underscore.io/books/) free
+
 * [Elixir](http://elixir-lang.org/)
 * [Crystal](https://crystal-lang.org/)
 * [PureScript](http://www.purescript.org/)
