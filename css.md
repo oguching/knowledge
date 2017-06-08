@@ -23,8 +23,9 @@ css methodologies
 * [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/design-principles.md)
 
 CSS/SASS Coding Guidelines  
-* [WP-Calypso Styleguide](https://github.com/Automattic/wp-calypso/blob/master/docs/coding-guidelines/css.md)
+* [WP-Calypso Styleguide](https://github.com/Automattic/wp-calypso/blob/master/docs/coding-guidelines/css.md)  
+* [CSS Guidelines](https://cssguidelin.es/)  
 
 resources
 * [CSS margins & paddings](https://www.sitepoint.com/set-css-margins-padding-cool-layout-tricks/)
-* [CSS Guidelines](https://cssguidelin.es/)
+
