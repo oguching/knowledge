@@ -27,3 +27,4 @@ CSS/SASS Coding Guidelines
 
 resources
 * [CSS margins & paddings](https://www.sitepoint.com/set-css-margins-padding-cool-layout-tricks/)
+* [CSS Guidelines](https://cssguidelin.es/)
