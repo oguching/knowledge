@@ -16,6 +16,13 @@ is the main language for writing Android applications.
 [Scala](http://www.scala-lang.org/)  
 [Scala books](http://underscore.io/books/) free
 
+***  
+
+### Dart  
+`Dart` is an application programming language that’s easy to learn, easy to scale, and deployable everywhere. 
+
+[Dart](https://www.dartlang.org/)
+
 * [Elixir](http://elixir-lang.org/)
 * [Crystal](https://crystal-lang.org/)
 * [PureScript](http://www.purescript.org/)
