@@ -39,3 +39,4 @@ is the main language for writing Android applications.
 * [Clojure](http://clojure.org/)
 * [Red](http://www.red-lang.org/)  
 * [Pony](http://www.ponylang.org/)
+* [Swift](https://swift.org/)
