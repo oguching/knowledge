@@ -24,7 +24,12 @@ is the main language for writing Android applications.
 [Dart](https://www.dartlang.org/)
 
 ### Moonscript
-`MoonScript` is a dynamic scripting language that compiles into Lua.
+`MoonScript` is a dynamic scripting language that compiles into Lua.  
+
+### Go
+`Go` is an open source programming language that makes it easy to build simple, reliable, and efficient software. 
+
+[Go](https://golang.org/)  
 
 [Moonscript](http://moonscript.org/)
 
