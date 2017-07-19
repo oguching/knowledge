@@ -26,12 +26,14 @@ is the main language for writing Android applications.
 ### Moonscript
 `MoonScript` is a dynamic scripting language that compiles into Lua.  
 
+[Moonscript](http://moonscript.org/)  
+
 ### Go
 `Go` is an open source programming language that makes it easy to build simple, reliable, and efficient software. 
 
 [Go](https://golang.org/)  
 
-[Moonscript](http://moonscript.org/)
+
 
 * [Elixir](http://elixir-lang.org/)
 * [Crystal](https://crystal-lang.org/)
