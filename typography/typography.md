@@ -1,3 +1,5 @@
+Typography is the art and technique of arranging type, type meaning letters and characters.
+
 Leading
 
 In metal type the space between lines is made from lead, thus the term `leading`. Leading describes the space between the descenders of one line and the ascenders of the next. (Light blue space)
@@ -11,3 +13,4 @@ Line spacing is defined as the space from one baseline to another. (Blue lines)
 References
 * [fontshop | magic polygon](https://www.fontshop.com/content/magic-polygon?utm_source=The+League+of+Moveable+Type&utm_campaign=2f340d7f23-Weekly_Typographic_0037_19_2016&utm_medium=email&utm_term=0_99d76f2842-2f340d7f23-419791817)
 * [Practical Typography](practicaltypography.com/)
+* [Typography terms](https://blog.hubspot.com/marketing/typography-terms-introduction)
